@@ -4,6 +4,9 @@
     padding: 1rem;
 }
 
+audio{
+    display: none;
+}
 
 /* STILE PER I BOTTONI */
 .type--A{
