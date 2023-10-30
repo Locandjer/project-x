@@ -8,3 +8,7 @@ avviaAudioButton.addEventListener("click", function () {
         audioPlayer.pause();
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("audioPLayer").click();
+});
