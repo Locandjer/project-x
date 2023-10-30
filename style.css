@@ -1,4 +1,11 @@
+.container-image{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
 
+
+/* STILE PER I BOTTONI */
 .type--A{
     --line_color : #555555 ;
     --back_color : #FFECF6  ;
