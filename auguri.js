@@ -1,6 +1,6 @@
 let COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
-NUM_CONFETTI = 3000;
+NUM_CONFETTI = 200;
 
 COLORS = [[185, 222, 249], [114, 189, 243], [44, 156, 237], [16, 116, 188], [10, 73, 117]];
 
@@ -52,7 +52,7 @@ Confetti = class Confetti {
   constructor() {
     this.style = COLORS[~~range(0, 5)];
     this.rgb = `rgba(${this.style[0]},${this.style[1]},${this.style[2]}`;
-    this.r = ~~range(2, 6);
+    this.r = ~~range(10, 16);
     this.r2 = 2 * this.r;
     this.replace();
   }
@@ -65,7 +65,7 @@ Confetti = class Confetti {
     this.xmax = w - this.r;
     this.ymax = h - this.r;
     this.vx = range(0, 2) + 8 * xpos - 5;
-    return this.vy = 0.7 * this.r + range(-1, 1);
+    return this.vy = 0.2 * this.r + range(-1, 1);
   }
 
   draw() {
