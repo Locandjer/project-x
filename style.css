@@ -252,7 +252,7 @@
 
   /* BOTTONE PER MUSICA */
   #button-62 {
-    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    background: linear-gradient(to bottom right, rgba(49, 118, 236, 0.5), rgba(54, 219, 227, 0.5));
     border: 0;
     border-radius: 12px;
     color: #FFFFFF;
@@ -275,9 +275,9 @@
   }
   
   #button-62:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 231, 239, 0.5), .125rem .125rem 1rem rgba(0, 21, 255, 0.5);
   }
   
   #button-62:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 133, 239, 0.5), .125rem .125rem 1rem rgba(8, 1, 63, 0.5);
   }
