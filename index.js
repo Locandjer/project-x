@@ -110,3 +110,70 @@ window.step = function() {
 };
 
 step();
+
+
+////////////////APPARIZIONE DELLA SUNNY/////////////////////
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".container");
+  const button = document.getElementById("myButton");
+  const img = document.querySelector(".thousand-sunny");
+  img.style.display = "none";
+
+  button.addEventListener("click", function () {
+      container.style.background = "white";
+      document.querySelector("#world").style.display = "none";
+      document.querySelector("h1").style.display = "none";
+      document.querySelector("#myButton").style.display = "none";
+
+      const img = document.querySelector(".thousand-sunny");
+      img.style.display = "block";
+      img.style.position = "absolute";
+      img.style.top = "50%";
+      img.style.left = "50%";
+      img.style.transform = "translate(-50%, -50%)";
+      img.style.opacity = 0; 
+
+      const onda = document.querySelector(".onda");
+      onda.style.display = "block";
+      onda.style.position = "absolute";
+      onda.style.top = "70%";
+      onda.style.left = "50%";
+      onda.style.transform = "translateX(-50%)";
+      onda.style.opacity = 0;
+      
+      const duration = 5000;
+
+      const interval = 100;
+
+      let startTime = null;
+      let currentTime;
+
+      function updateOpacity(timestamp) {
+        if (!startTime) {
+            startTime = timestamp;
+        }
+
+        currentTime = timestamp - startTime;
+        const progress = currentTime / duration;
+
+        if (progress < 1) {
+            img.style.opacity = progress;
+            onda.style.opacity = progress;
+            requestAnimationFrame(updateOpacity);
+        } else {
+            img.style.opacity = 1;
+            onda.style.opacity = 1;
+        }
+    }
+
+    requestAnimationFrame(updateOpacity);
+
+    setTimeout(function () {
+        window.location.href = "Landing.html";
+    }, duration);
+
+  });
+});
+
