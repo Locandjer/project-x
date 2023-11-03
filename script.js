@@ -1,14 +1,14 @@
-const avviaAudioButton = document.getElementById("button-62");
-const audioPlayer = document.getElementById("audioPlayer");
-
-avviaAudioButton.addEventListener("click", function () {
-    if (audioPlayer.paused()) {
-        audioPlayer.play();
-    } else {
-        audioPlayer.pause();
-    }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("audioPLayer").click();
+    const avviaAudioButton = document.getElementById("button-62");
+    const audioPlayer = document.getElementById("audioPlayer");
+
+    avviaAudioButton.addEventListener("click", function () {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
+    });
+
+    document.getElementById("audioPlayer").click();
 });
