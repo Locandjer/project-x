@@ -1,3 +1,5 @@
+///////////// FIOCCHI ////////////
+
 let COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
 NUM_CONFETTI = 200;
@@ -143,10 +145,12 @@ document.addEventListener("DOMContentLoaded", function () {
       onda.style.transform = "translateX(-50%)";
       onda.style.opacity = 0;
       
-      const duration = 5000;
+      /////////// TEMPI DI DURATA /////////
+      const skipPagina = 8000;
+      const opacizzaImmagine = 3000;
+      const deOpacizzaImmagine = 3000;
 
-      const interval = 100;
-
+      ////////// FUNZIONE PER OPACIZZARE///////////
       let startTime = null;
       let currentTime;
 
@@ -154,10 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!startTime) {
             startTime = timestamp;
         }
-
         currentTime = timestamp - startTime;
-        const progress = currentTime / duration;
-
+        const progress = currentTime / opacizzaImmagine;
         if (progress < 1) {
             img.style.opacity = progress;
             onda.style.opacity = progress;
@@ -167,12 +169,32 @@ document.addEventListener("DOMContentLoaded", function () {
             onda.style.opacity = 1;
         }
     }
-
     requestAnimationFrame(updateOpacity);
+
+    //////////FUNZIONE PER DEOPACIZZARE/////////////
+    let startTime2 = 5000;
+    let currentTime2;
+
+    function degradeOpacity(timestamp2) {
+      if (startTime2 = 5000) {
+          startTime2 = timestamp2;
+      }
+      currentTime2 = timestamp2 - startTime2;
+      const progress2 = currentTime2 / deOpacizzaImmagine;
+      if (progress2 < 1) {
+          img.style.opacity = progress2;
+          onda.style.opacity = progress2;
+          requestAnimationFrame(degradeOpacity);
+      } else {
+          img.style.opacity = 0;
+          onda.style.opacity = 0;
+      }
+  }
+  requestAnimationFrame(degradeOpacity);
 
     setTimeout(function () {
         window.location.href = "Landing.html";
-    }, duration);
+    }, skipPagina);
 
   });
 });
