@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
       /////////// TEMPI DI DURATA /////////
       const skipPagina = 8000;
       const opacizzaImmagine = 3000;
-      const deOpacizzaImmagine = 3000;
+      // const deOpacizzaImmagine = 3000;
 
       ////////// FUNZIONE PER OPACIZZARE///////////
       let startTime = null;
@@ -171,26 +171,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     requestAnimationFrame(updateOpacity);
 
-    //////////FUNZIONE PER DEOPACIZZARE/////////////
-    let startTime2 = 5000;
-    let currentTime2;
+  //   //////////FUNZIONE PER DEOPACIZZARE/////////////
+  //   let startTime2 = 5000;
+  //   let currentTime2;
 
-    function degradeOpacity(timestamp2) {
-      if (startTime2 = 5000) {
-          startTime2 = timestamp2;
-      }
-      currentTime2 = timestamp2 - startTime2;
-      const progress2 = currentTime2 / deOpacizzaImmagine;
-      if (progress2 < 1) {
-          img.style.opacity = progress2;
-          onda.style.opacity = progress2;
-          requestAnimationFrame(degradeOpacity);
-      } else {
-          img.style.opacity = 0;
-          onda.style.opacity = 0;
-      }
-  }
-  requestAnimationFrame(degradeOpacity);
+  //   function degradeOpacity(timestamp2) {
+  //     if (startTime2 = 5000) {
+  //         startTime2 = timestamp2;
+  //     }
+  //     currentTime2 = timestamp2 - startTime2;
+  //     const progress2 = currentTime2 / deOpacizzaImmagine;
+  //     if (progress2 > 0) {
+  //         img.style.opacity = progress2;
+  //         onda.style.opacity = progress2;
+  //         requestAnimationFrame(updateOpacity);
+  //     } else {
+  //         img.style.opacity = 0;
+  //         onda.style.opacity = 0;
+  //     }
+  // }
+  // requestAnimationFrame(degradeOpacity);
 
     setTimeout(function () {
         window.location.href = "Landing.html";
