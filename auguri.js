@@ -1,8 +1,8 @@
 let COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
-NUM_CONFETTI = 950;
+NUM_CONFETTI = 3000;
 
-COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+COLORS = [[185, 222, 249], [114, 189, 243], [44, 156, 237], [16, 116, 188], [10, 73, 117]];
 
 PI_2 = 2 * Math.PI;
 
