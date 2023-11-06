@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#world").style.display = "none";
       document.querySelector("h1").style.display = "none";
       document.querySelector("#myButton").style.display = "none";
+      document.querySelector("#timone").style.display = "none";
 
       const img = document.querySelector(".thousand-sunny");
       img.style.display = "block";
@@ -146,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
       onda.style.opacity = 0;
       
       /////////// TEMPI DI DURATA /////////
-      const skipPagina = 5000;
+      const skipPagina = 10000;
       const opacizzaImmagine = 3000;
       let startTime = null;
       let currentTime;
@@ -176,3 +177,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 }
 
+///////////////MUSICA CARICAMENTO///////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const avviaAudioButton = document.getElementById("myButton");
+  const audioPlayer = document.getElementById("audioPlayer");
+
+  avviaAudioButton.addEventListener("click", function () {
+      if (audioPlayer.paused) {
+          audioPlayer.play();
+      } else {
+          audioPlayer.pause();
+      }
+  });
+
+  document.getElementById("audioPlayer").click();
+});

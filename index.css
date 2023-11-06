@@ -12,7 +12,6 @@ body {
 .titolo-wrapper{
   display: flex;
   justify-content: center;
-  /* margin-top: 10rem; */
   text-align: center;
   font-size: 4rem;
   z-index: 2;
@@ -27,7 +26,6 @@ h1{
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  /* margin-top: 25rem; */
   height: 100vh;
   padding-bottom: 10rem;
 }
@@ -48,6 +46,7 @@ h1{
 
 .onda{
   display: none;
+  position: relative;
   top: -50;
 }
 
@@ -73,7 +72,7 @@ h1{
   letter-spacing: 10px;
 }
 
-.timone{
+#timone{
   z-index: 2;
 }
 
