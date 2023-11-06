@@ -9,15 +9,25 @@ body {
   overflow: hidden;
 }
 
+.titolo-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 4rem;
+  z-index: 2;
+}
 
-
+h1{
+  font-family: 'Onepiece', sans-serif;
+  z-index: 2;
+}
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   flex-direction: column;
-  ;
+  margin-top: 25rem;
 }
 
 #world {
@@ -36,6 +46,7 @@ body {
 
 .onda{
   display: none;
+  top: -50;
 }
 
 #myButton {
@@ -48,13 +59,13 @@ body {
   color: #fff;
   cursor: pointer;
   font-family: Montserrat, sans-serif;
-  font-size: 3em; /* Aumenta la dimensione del testo */
+  font-size: 3em;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 300px; /* Aumenta la larghezza */
-  height: 300px; /* Aumenta l'altezza */
+  width: 300px; 
+  height: 300px; 
   line-height: 50px;
   font-family: 'Onepiece', sans-serif;
 }
