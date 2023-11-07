@@ -1,0 +1,51 @@
+ .container{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+ }
+ 
+ 
+ 
+ 
+ /* BOTTONE PER MUSICA */
+ #button-62 {
+    background: linear-gradient(to bottom right, rgba(49, 118, 236, 0.5), rgba(54, 219, 227, 0.5));
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  #button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 231, 239, 0.5), .125rem .125rem 1rem rgba(0, 21, 255, 0.5);
+  }
+  
+  #button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 133, 239, 0.5), .125rem .125rem 1rem rgba(8, 1, 63, 0.5);
+  }
+
+  .container-image{
+    max-width: 100%;
+}
+
+#audioPlayer{
+    display: none;
+    margin-top: 1rem;
+}

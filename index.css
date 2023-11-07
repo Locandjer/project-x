@@ -3,37 +3,24 @@
   src: url('./fonts/Onepiece.ttf') format('truetype');
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.titolo-wrapper{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 4rem;
-}
-
-h1{
+.titolo{
   font-family: 'Onepiece', sans-serif;
+  font-size: 7rem;
   z-index: 2;
+  text-align: center;
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  padding: 3rem 1rem;
   height: 100vh;
-  padding-bottom: 10rem;
 }
 
 #world {
   position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  z-index: 0;
 }
 
 .thousand-sunny {
@@ -45,8 +32,8 @@ h1{
 
 .onda{
   display: none;
-  position: relative;
-  top: -50;
+  position:absolute;
+  margin-bottom: 10rem;
 }
 
 #myButton {
