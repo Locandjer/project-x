@@ -132,17 +132,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const img = document.querySelector(".thousand-sunny");
       img.style.display = "block";
-      img.style.position = "absolute";
-      img.style.top = "50%";
-      img.style.left = "50%";
-      img.style.transform = "translate(-50%, -50%)";
+      // img.style.position = "absolute";
+
       img.style.opacity = 0;
 
       const onda = document.querySelector(".onda");
       onda.style.display = "block";
-      onda.style.position = "absolute";
-      onda.style.top = "70%";
-      onda.style.left = "50%";
+      // onda.style.position = "absolute";
+      // onda.style.top = "70%";
+      // onda.style.left = "50%";
       onda.style.transform = "translateX(-50%)";
       onda.style.opacity = 0;
       
@@ -157,10 +155,11 @@ document.addEventListener("DOMContentLoaded", function () {
             startTime = timestamp;
         }
         currentTime = timestamp - startTime;
-        const progress = currentTime / opacizzaImmagine;
+        const progress = currentTime  / opacizzaImmagine ;
+        const progressOnda = currentTime / opacizzaImmagine;
         if (progress < 1) {
             img.style.opacity = progress;
-            onda.style.opacity = progress;
+            onda.style.opacity = progressOnda;
             requestAnimationFrame(updateOpacity);
         } else {
             img.style.opacity = 1;
@@ -192,3 +191,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("audioPlayer").click();
 });
+
