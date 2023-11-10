@@ -7,6 +7,7 @@
   justify-content: space-evenly;
   align-items: stretch;
   text-align: center;
+  background-color: #fffad8;
 }
 
 .container-title{
@@ -36,16 +37,16 @@ h1 {
 .saggio-text{
   writing-mode: vertical-rl;
   text-orientation: upright;
-  white-space: nowrap;  
+  /* white-space: nowrap;   */
   /* text-align: center; */
 }
 
-.container-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  flex-direction: column;
+strong{
+  background: linear-gradient(to right, #000000, #ff0000);
+  -webkit-background-clip: text; 
+  color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 #audioPlayer {
