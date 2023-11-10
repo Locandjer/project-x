@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,15 @@
 </head>
 
 <body>
-    <div>
-        <h1>Mr. Malubutu</h1>
-    </div>
     <div class="container">
+        <div class="container-title">
+            <h1>Una volta un vecchio saggio disse a Malubutu:</h1>
+        </div>
+        <div class="container-saggio">
+            <p class="saggio-text">本体には関係ないスタイル</p>
+            <img class="saggio-cinese" src="./images/saggio_cinese.png" alt="Saggio cinese">
+        </div>
+
         <a href="./raccolta-butu/Smokers.html" class="myButton">
             <span>Modellutu</span>
         </a>
@@ -20,15 +26,15 @@
             <span>Stalkerutu</span>
         </a>
         <a href="./raccolta-butu/Possedutu.html" class="myButton">
-             <span>Possedutu</span>
+            <span>Possedutu</span>
         </a>
+        <audio id="audioPlayer" controls autoplay>
+            <source src="./music/suono_gabbiani.mp3" type="audio/mpeg">
+        </audio>
     </div>
-    <audio id="audioPlayer" controls autoplay>
-        <source src="./music/suono_gabbiani.mp3" type="audio/mpeg">
-    </audio>
     <script>
         const audio = document.getElementById("audioPlayer");
-        audio.volume = 0.5;
+        audio.volume = 0.3;
     </script>
 </body>
 
