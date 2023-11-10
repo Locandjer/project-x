@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       onda.style.opacity = 0;
       
       /////////// TEMPI DI DURATA /////////
-      const skipPagina = 10000;
+      const skipPagina = 9000;
       const opacizzaImmagine = 3000;
       let startTime = null;
       let currentTime;

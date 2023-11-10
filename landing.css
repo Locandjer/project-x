@@ -19,7 +19,7 @@ h1 {
   font-family: cursive;
   line-height: 2rem;
   letter-spacing: 2px;
-  font-size: large;
+  font-weight: bolder;
 }
 
 .container-saggio{
@@ -59,9 +59,6 @@ strong{
   margin-top: 1rem;
 }
 
-
-
-/* STILE PER I BOTTONI */
 .button-55 {
   align-self: center;
   background-color: #fff;
