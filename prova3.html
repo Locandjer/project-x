@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsanti</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1rem;
+            width: calc(50% - 2rem); 
+        }
+
+        .button:nth-child(odd) {
+            align-self: flex-start; /* Allinea il pulsante a sinistra per i numeri dispari */
+        }
+
+        .button:nth-child(even) {
+            align-self: flex-end; /* Allinea il pulsante a destra per i numeri pari */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button">Pulsante 1</button>
+        <button class="button">Pulsante 2</button>
+        <button class="button">Pulsante 3</button>
+        <button class="button">Pulsante 4</button>
+        <button class="button">Pulsante 5</button>
+        <button class="button">Pulsante 6</button>
+    </div>
+</body>
+</html>
