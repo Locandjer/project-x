@@ -55,10 +55,15 @@ strong{
 .button-wrapper{
   display: flex;
   background-color: cadetblue;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: space-between;
   flex-direction: column;
   padding: 1rem;
+  background-image: url('./images/barca-sfondo.jpeg');
+  background-size: cover; 
+  background-repeat: repeat; 
+  background-position: center;
+  overflow: hidden;
 }
 
 .even{

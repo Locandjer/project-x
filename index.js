@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       /////////// TEMPI DI DURATA /////////
       const skipPagina = 9000;
-      const opacizzaImmagine = 3000;
+      const opacizzaImmagine = 5000;
       let startTime = null;
       let currentTime;
 
