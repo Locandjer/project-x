@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   align-items: stretch;
   text-align: center;
-  background-color: #fffad8;
+  background-color: rgb(236, 201, 180);
 }
 
 .container-title{
@@ -54,12 +54,12 @@ strong{
 
 .button-wrapper{
   display: flex;
-  background-color: cadetblue;
+  background-color: rgb(255, 255, 255);
   gap: 2rem;
   justify-content: space-between;
   flex-direction: column;
-  padding: 1rem;
-  background-image: url('./images/barca-sfondo.jpeg');
+  padding: 3rem;
+  background-image: url('./images/mappatesoro.jpeg');
   background-size: cover; 
   background-repeat: repeat; 
   background-position: center;
