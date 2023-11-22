@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principale</title>
+    <title>Sfumatura Continua di Colori Metallizzati</title>
     <style>
-        :target {
-            scroll-margin-top: 40px;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            overflow: hidden; /* Impedisce lo sforamento del contenuto */
+        }
+
+        .sfumatura-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sfumatura-leggenda {
+            font-size: 2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(to right, #FFD700, #C0C0C0, #FFFFFF, #CD7F32);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            animation: sfumatura 10s linear infinite;
+        }
+
+        @keyframes sfumatura {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Benvenuto nella Pagina Principale</h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <button id="continuaButton" onclick="redirectToNewPage()">Vai alla Nuova Pagina</button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetr adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <button id="continuaButton2" onclick="redirectToNewPage()">Vai alla Nuova Pagina</button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetr adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum atque repudiandae dicta consequuntur impedit amet hic culpa quis, modi quae tenetur itaque unde id quibusdam, inventore vel possimus quisquam!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi totam perspiciatis excepturi dignissimos at dolor harum voluptatum reiciendis necessitatibus, maiores in vel consequatur expedita ducimus laboriosam optio itaque quo esse.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minima necessitatibus deleniti odit voluptatibus atque accusamus voluptate. Eveniet sint earum odit possimus debitis illo quisquam id, aperiam, similique explicabo ullam.</p>
-    <script>
-        function redirectToNewPage() {
-            window.location.href = 'prova2.html';
-        }
-    </script>
+    <div class="sfumatura-container">
+        <h1 class="sfumatura-leggenda">L'inizio di una leggenda</h1>
+    </div>
 </body>
 </html>
