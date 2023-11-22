@@ -47,6 +47,24 @@ strong{
   display: inline-block;
 }
 
+.leggenda{
+  text-align: center;
+  animation: fuocoEffect 1s infinite alternate;
+}
+
+@keyframes fuocoEffect {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    }
+    100% {
+        color: #ff6600;
+        text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600;
+    }
+}
+
+
+
 #audioPlayer {
   display: none;
   margin-top: 1rem;

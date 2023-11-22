@@ -3,46 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sfumatura Continua di Colori Metallizzati</title>
+    <title>Effetto Fuoco</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
-            overflow: hidden; /* Impedisce lo sforamento del contenuto */
         }
 
-        .sfumatura-container {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .sfumatura-leggenda {
+        .fuoco {
             font-size: 2em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background: linear-gradient(to right, #FFD700, #C0C0C0, #FFFFFF, #CD7F32);
-            -webkit-background-clip: text;
-            color: transparent;
             display: inline-block;
-            animation: sfumatura 10s linear infinite;
+            position: relative;
+            animation: fuocoEffect 1s infinite alternate;
         }
 
-        @keyframes sfumatura {
+        @keyframes fuocoEffect {
             0% {
-                transform: translateX(100%);
+                color: #ff0000;
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
             }
             100% {
-                transform: translateX(-100%);
+                color: #ff6600;
+                text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600;
             }
         }
     </style>
 </head>
 <body>
-    <div class="sfumatura-container">
-        <h1 class="sfumatura-leggenda">L'inizio di una leggenda</h1>
-    </div>
+    <p><span class="fuoco">L'inizio di una leggenda</span></p>
+
+    
 </body>
 </html>
