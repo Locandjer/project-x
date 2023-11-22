@@ -13,17 +13,20 @@
 <body>
     <div class="container">
         <div class="container-image">
-            <img src="../images/sguardutu.JPEG" width="100%" height="auto" alt="La tua immagine">
+            <video width="100%" height="auto" controls>
+                <source src="../images/video_lent.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+              </video>              
         </div>
         <button id="button-62">Musicutu</button>
         <audio id="audioPlayer" controls autoplay>
-            <source src="../music/drum-liberation.mp3" type="audio/mpeg">
+            <source src="../music/onepiece-epic.mp3" type="audio/mpeg">
         </audio>
         <button onclick="returnToMainPage()">Continua il tuo viaggio</button>
     </div>
     <script>
         function returnToMainPage() {
-            window.location.href = '../Landing.html#continuaButton2';
+            window.location.href = '../Landing.html#continuaButton6';
         }
     </script>
 </body>
