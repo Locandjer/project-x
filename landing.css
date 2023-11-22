@@ -47,7 +47,22 @@ strong{
   display: inline-block;
 }
 
+.cavaliere-container{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cavaliere{
+  max-width: 100%;
+  max-height: auto;
+}
+
 .leggenda{
+  font-size: 2rem;
   text-align: center;
   animation: fuocoEffect 1s infinite alternate;
 }
