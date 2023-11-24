@@ -1,12 +1,74 @@
-.image-container {
-    width: 300px; /* Larghezza desiderata */
-    height: 300px; /* Altezza desiderata */
-    overflow: hidden; /* Nasconde eventuali bordi sconfinati */
-    position: relative;
+.container {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.box1 {
+    flex: 1;
+    border: 2px solid;
+    display: inherit;
+    flex-direction: column;
+}
+
+.box1-c1 {
+    flex: 1;
+    background-color: aliceblue;
+}
+
+.box1-c2 {
+    flex: 4;
+    background-color: antiquewhite;
+}
+
+.box1-c3 {
+    flex: 1;
+    background-color: aqua;
+}
+
+.box2 {
+    flex: 3;
+    border: 2px solid;
+    display: inherit;
+    flex-direction: column;
+}
+
+.box2-c1 {
+    flex: 2;
+    background-color: aquamarine;
+    transform: skew(-20deg);
+}
+
+.box2-c2 {
+    flex: 2;
+    background-color: azure;transform: skew(20deg);
+}
+
+.box2-c3 {
+    flex: 2;
+    background-color: beige;
+    transform: skew(-20deg);
+}
+
+.box3 {
+    flex: 1;
+    border: 2px solid;
+    display: inherit;
+    flex-direction: column;
+}
+
+.box3-c1 {
+    flex: 1;
+    background-color: bisque;
+}
+
+.box3-c2 {
+    flex: 4;
+    background-color: blanchedalmond;
+}
+
+.box3-c3 {
+    flex: 1;
+    background-color: blue;
 }
