@@ -4,7 +4,7 @@ let COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle,
 
 NUM_CONFETTI = 200;
 
-COLORS = [[185, 222, 249], [114, 189, 243], [44, 156, 237], [16, 116, 188], [10, 73, 117]];
+COLORS = [[204,	136, 153], [75, 0, 130], [111, 0, 255	], [49, 0, 98], [0, 47, 167]];
 
 PI_2 = 2 * Math.PI;
 
