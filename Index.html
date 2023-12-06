@@ -20,7 +20,8 @@
       <div>
         <img class="mati-immagine" src="images/matilde.jpg" alt="matilde">
       </div>
-      <audio style="display: none;" controls autoplay>
+      <button id="button-62">Tanti Auguri</button>
+      <audio id="audioPlayer" style="display: none;" controls autoplay>
         <source src="./music/Bello Figo - Sembro Francesco Totti.mp3" type="audio/mpeg" />
       </audio>
     </div>
@@ -42,7 +43,22 @@
       </audio>
     </div> -->
     
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const avviaAudioButton = document.getElementById("button-62");
+    const audioPlayer = document.getElementById("audioPlayer");
 
+    avviaAudioButton.addEventListener("click", function () {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
+    });
+
+    document.getElementById("audioPlayer").click();
+});
+    </script>
     <script src="index.js"></script>
     <script src="sunny.js"></script>
   </body>
