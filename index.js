@@ -132,15 +132,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const img = document.querySelector(".thousand-sunny");
       img.style.display = "block";
-      // img.style.position = "absolute";
+      img.style.position = "absolute";
 
       img.style.opacity = 0;
 
       const onda = document.querySelector(".onda");
       onda.style.display = "block";
-      // onda.style.position = "absolute";
-      // onda.style.top = "70%";
-      // onda.style.left = "50%";
+      onda.style.position = "absolute";
+      onda.style.top = "70%";
+      onda.style.left = "50%";
       onda.style.transform = "translateX(-50%)";
       onda.style.opacity = 0;
       
