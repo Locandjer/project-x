@@ -6,40 +6,40 @@
     display: inline-block;
   }
 
-  .titolo1{
-    background: linear-gradient(to right, #000000, #ff0000);
+  .titolo2{
+    background: linear-gradient(to right, #000000, #ffff00);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     display: inline-block;
   }
 
-  .titolo1{
-    background: linear-gradient(to right, #000000, #ff0000);
+  .titolo3{
+    background: linear-gradient(to right, #000000, #5dff06);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     display: inline-block;
   }
 
-  .titolo1{
-    background: linear-gradient(to right, #000000, #ff0000);
+  .titolo4{
+    background: linear-gradient(to right, #000000, #00f2ff);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     display: inline-block;
   }
   
-  .titolo1{
-    background: linear-gradient(to right, #000000, #ff0000);
+  .titolo5{
+    background: linear-gradient(to right, #000000, #0033ff);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
     display: inline-block;
   }
   
-  .titolo1{
-    background: linear-gradient(to right, #000000, #ff0000);
+  .titolo6{
+    background: linear-gradient(to right, #000000, #9d02cc);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
