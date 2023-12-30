@@ -54,7 +54,7 @@ Confetti = class Confetti {
   constructor() {
     this.style = COLORS[~~range(0, 5)];
     this.rgb = `rgba(${this.style[0]},${this.style[1]},${this.style[2]}`;
-    this.r = ~~range(10, 16);
+    this.r = ~~range(10, 50);
     this.r2 = 2 * this.r;
     this.replace();
   }
@@ -69,7 +69,7 @@ Confetti = class Confetti {
     this.vx = range(0, 2) + 8 * xpos - 5;
     return this.vy = 0.2 * this.r + range(-1, 1);
   }
-
+  
   draw() {
     let ref;
     this.x += this.vx;
