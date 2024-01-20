@@ -3,15 +3,28 @@
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
   }
 
+  body{
+    background-color: rgb(245, 233, 210);
+  }
+  
+  a{
+    text-decoration: none;
+  }
   .titolo2{
     background: linear-gradient(to right, #000000, #ffff00);
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
   }
 
   .titolo3{
@@ -19,7 +32,10 @@
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
   }
 
   .titolo4{
@@ -27,7 +43,10 @@
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
   }
   
   .titolo5{
@@ -35,7 +54,10 @@
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
   }
   
   .titolo6{
@@ -43,14 +65,42 @@
     -webkit-background-clip: text; 
     color: transparent;
     background-clip: text;
-    display: inline-block;
-  } 
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+  }
+  
+  .titolo-prologo{
+    background: linear-gradient(to right, #000000, #ff000d);
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+  }
+
+  .storia{
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .box-button{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   #button-62 {
-    background: linear-gradient(to bottom right, rgba(49, 118, 236, 0.5), rgba(54, 219, 227, 0.5));
+    background: linear-gradient(to bottom right, #ffef08e7, rgba(255, 166, 0, 0.959));
     border: 0;
     border-radius: 12px;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -66,6 +116,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
+    font-size: 1.3rem;
   }
   
   #button-62:not([disabled]):focus {
