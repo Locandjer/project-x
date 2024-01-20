@@ -86,13 +86,15 @@
     font-family: 'Amatic SC', sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    line-height: 40px;
+    line-height: 50px;
+    letter-spacing: 3px;
   }
 
   .box-button{
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
   }
 
 
